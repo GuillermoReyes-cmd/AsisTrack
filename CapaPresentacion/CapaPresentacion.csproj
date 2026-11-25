@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>disable</ImplicitUsings>
+    <Nullable>disable</Nullable>
+    <RootNamespace>CapaPresentacion</RootNamespace>
+    <AssemblyName>AsisTrack</AssemblyName>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- Control Chart (gráficos) para .NET 8: reemplaza a System.Windows.Forms.DataVisualization de .NET Framework -->
+    <PackageReference Include="WinForms.DataVisualization" Version="1.9.2" />
+    <!-- Necesario para crear el DbContext al ejecutar Scaffold-DbContext desde la Consola del Administrador de paquetes -->
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="8.0.11">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CapaNegocio\CapaNegocio.csproj" />
+    <ProjectReference Include="..\CapaDatos\CapaDatos.csproj" />
+  </ItemGroup>
+
+</Project>
