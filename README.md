@@ -2,6 +2,16 @@
 
 Aplicación de escritorio para gestionar la asistencia del personal de una empresa. Reemplaza el registro manual (libros de actas y hojas de cálculo) por una **marcación con DNI** que toma la fecha y hora del servidor, calcula automáticamente las **tardanzas** según el turno y la tolerancia de cada colaborador, centraliza los **permisos y justificaciones** y genera **reportes** para la planilla y la toma de decisiones.
 
+## Capturas
+
+| Inicio de sesión | Marcación de asistencia |
+|---|---|
+| ![Inicio de sesión](docs/login.png) | ![Marcación de asistencia](docs/marcacion.png) |
+
+**Reporte de ausentismo**
+
+![Reporte de ausentismo](docs/reporte-ausentismo.png)
+
 ## Funcionalidades
 
 - **Marcación de ingreso y salida por DNI**, con la hora del servidor de base de datos.
